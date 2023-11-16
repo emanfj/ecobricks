@@ -4,11 +4,11 @@ import './Impact.css';
 
 const Impact = () => {
   return (
-    <div className="impact-container">
+    <section className="impact-container">
       <div className="impact-heading">
-        <div className="dot"></div>
+        <div className="impact-dot"></div>
         <div className="impact">our impact</div>
-        <div className="dot"></div>
+        <div className="impact-dot"></div>
       </div>
       <div className="impact-analytics">
         <div className="analytics-item">
@@ -40,7 +40,7 @@ const Impact = () => {
           <CountUp start={0} end={400} duration={2.5} className="count-up-figure" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
