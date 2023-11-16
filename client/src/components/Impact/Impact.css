@@ -1,0 +1,80 @@
+.impact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #EEFCEA;
+  }
+  
+  .impact-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top:25px;
+  letter-spacing: 5px;
+  }
+  
+  .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 0 5px;
+  }
+  
+  .impact {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 10px;
+  }
+  
+  .impact-analytics {
+  display: flex;
+  justify-content: space-around;
+  gap: 120px; /* adding equal spacing between circles */
+  flex-wrap: wrap; 
+  }
+  
+  .analytics-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .circle {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border: 6px solid #36CC6B;
+  background-color: #D8ECDE;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  }
+  
+  .circle-heading {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  }
+  
+  .impact-divider {
+  background-color: #000;
+  margin: 20px;
+  width: 100%;
+  margin-top:30px;
+  margin-bottom:0;
+  
+  }
+  
+  .count-up-figure {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top:20px;
+  margin-bottom:50px;
+
+  }
+

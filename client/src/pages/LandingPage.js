@@ -1,11 +1,13 @@
 import React from 'react';
 import Hero from '../components/Hero/Hero'; 
+import Impact from '../components/Impact/Impact';
 import Footer from '../components/Footer/Footer'; 
 
 const LandingPage = () => {
   return (
     <div>
-      <Hero /> 
+      {/* <Hero />  */}
+      <Impact />
       <Footer /> 
     </div>
   );
