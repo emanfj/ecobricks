@@ -1,0 +1,44 @@
+/* hero section */
+.hero-section{
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+/* cta */
+.cta-button{
+    width: 179px;
+    height: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+
+/* hero tagline */
+.hero-tagline{
+    position: absolute;
+    width: 748px;
+    height: 282px;
+    left: 79px;
+    top: 317px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 78px;
+    line-height: 94px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+
