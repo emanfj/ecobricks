@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <hr className="divider"/>
+        <hr className="footer-divider"/>
         <div className="bottom-section">
             <div className="footer-links">
                 <p><a href="privacy-policy">privacy policy</a> |  <a href="/sitemap">sitemap</a></p>

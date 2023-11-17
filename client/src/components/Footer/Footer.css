@@ -28,7 +28,7 @@
     margin-bottom: 10px;
   }
   
-  /* Apply consistent margin to contact information */
+  /* consistent margin to contact information */
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
     justify-content: center;
     flex-direction: row; 
     box-sizing: border-box;
-    margin-top: auto; /* Add this line */
+    margin-top: auto;
 
   }
   
@@ -93,7 +93,7 @@
 
 .input-wrapper {
   display: flex;
-  align-items: stretch; /* Add this line */
+  align-items: stretch; 
 
 }
 
@@ -101,28 +101,28 @@ input {
   flex: 1;
   padding: 8px;
   box-sizing: border-box;
-  background-color: transparent; /* Add this line */
-  border: 1px solid #fff; /* Add this line */
-  color: #fff; /* Add this line */
+  background-color: transparent; 
+  border: 1px solid #fff; 
+  color: #fff; 
 
 }
 
 input::placeholder {
-  color: #fff; /* Add this line */
+  color: #fff; 
 }
 
 button {
-  background-color: transparent; /* Add this line */
-  color: #fff; /* Add this line */
+  background-color: transparent; 
+  color: #fff; 
   padding: 8px 15px;
-  border: 1px solid #fff; /* Add this line */
+  border: 1px solid #fff; 
   cursor: pointer;
   flex: 0 0 auto;
   margin-left: -1px;
 }
   
   /* Divider */
-  .divider {
+  .footer-divider {
     width: 100%;
     border: 1px solid #ffffff;
     margin-top:20px;
