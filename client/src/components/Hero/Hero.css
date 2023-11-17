@@ -1,44 +1,70 @@
 /* hero section */
-.hero-section{
-    position: absolute;
-    width: 1440px;
-    height: 900px;
-    left: 0px;
-    top: 0px;
-}
-
-
-
-/* cta */
-.cta-button{
-    width: 179px;
-    height: 42px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    text-transform: capitalize;
-    color: #000000;
-}
-
-
-/* hero tagline */
-.hero-tagline{
-    position: absolute;
-    width: 748px;
-    height: 282px;
-    left: 79px;
-    top: 317px;
-    font-family: 'Inter';
-    font-style: normal;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }  
+  
+  /* hero tagline */
+  .hero-tagline {  
+    width: 100%;
+    max-width: 748px; /* Limit the width for larger screens */
+    height: 200px;
     font-weight: 600;
-    font-size: 78px;
-    line-height: 94px;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: 'Georgia';
     letter-spacing: 0.05em;
     color: #000000;
-}
+  }
 
-
+  .hero-tagline p{
+    text-align: left;
+  }
+  /* cta button */
+  .cta-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 299px;
+    height: 66px;
+    margin-top: 20px; /* Add spacing between tagline and button */
+    background-color: #36CC6B;
+    border-radius: 12px;
+  }
+  
+  /* cta button text */
+  .cta-button button {
+    width: 100%;
+    height: 100%;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #000000;
+    border: none;
+    background: transparent;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-tagline {
+      font-size: 1.5rem;
+    }
+  
+    .cta-button button {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Add more media queries as needed for other breakpoints */
+  
