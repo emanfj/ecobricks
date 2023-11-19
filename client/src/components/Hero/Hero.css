@@ -2,7 +2,7 @@
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,22 +11,22 @@
     box-sizing: border-box; /* Include padding in the width calculation */
   }  
   
-  /* hero tagline */
-  .hero-tagline {  
-    width: 100%;
-    max-width: 748px; /* Limit the width for larger screens */
-    height: 200px;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.2;
-    font-family: 'Georgia';
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
+/* hero tagline */
+.hero-tagline {
+  width: 50%;
+  max-width: 748px;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: 'Georgia';
+  letter-spacing: 0.05em;
+  color: #000000;
+}
 
-  .hero-tagline p{
-    text-align: left;
-  }
+.hero-tagline p {
+  text-align: left;
+}
+
   /* cta button */
   .cta-button {
     display: flex;
@@ -54,17 +54,3 @@
     border: none;
     background: transparent;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .hero-tagline {
-      font-size: 1.5rem;
-    }
-  
-    .cta-button button {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Add more media queries as needed for other breakpoints */
-  

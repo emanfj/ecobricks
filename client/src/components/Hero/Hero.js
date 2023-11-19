@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 import './Hero.css';
 
 const Typewriter = ({ text, delay }) => {
@@ -16,7 +17,7 @@ const Typewriter = ({ text, delay }) => {
     }
   }, [currentIndex, delay, text]);
 
-  return <span >{currentText}</span>;
+  return <span>{currentText}</span>;
 };
 
 const Hero = () => {
@@ -24,14 +25,16 @@ const Hero = () => {
     'Building a Greener Tomorrow, One Recycled Brick at a Time with Ecobricks: Transforming Waste into Sustainable Solutions';
 
   return (
-    <section className="hero-section">
-      <div className='hero-tagline'>
-        <p><Typewriter text={taglineText} delay={50} /></p>
+    <section className="hero-section p-5 d-flex flex-column align-items-left justify-content-center">
+      <div className="hero-tagline mb-4 text-center">
+        <p>
+          <Typewriter text={taglineText} delay={50} />
+        </p>
       </div>
-      <div className='cta-button'>
-        <button>
+      <div className="cta-button w-100 max-w-299px">
+        <Button variant="success" className="w-100">
           Get to know us!
-        </button>
+        </Button>
       </div>
     </section>
   );
