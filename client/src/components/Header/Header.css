@@ -1,0 +1,277 @@
+/* Header */
+
+.header{
+    position: absolute;
+    width: 1280px;
+    height: 75px;
+    left: 80px;
+    top: 32px;
+}
+
+
+/* header box */
+
+.header-box {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #36CC6B;
+
+}
+
+/* Logo Small 1 */
+.logo-small-1 {
+
+    position: relative;
+    left: 1.64%;
+    right: 93.05%;
+    top: 4%;
+    bottom: 0%;
+    width: 10%;
+    height: 20%;
+
+
+    /*background: url(LogoSmall.png);*/
+}
+
+/* Ecobricks Website */
+.ecobricks-website {
+
+    position: absolute;
+    width: 288px;
+    left: calc(50% - 288px/2);
+    top: 18.03%;
+    bottom: 18.03%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+
+/* Hamburger */
+.hamburger {
+    position: absolute;
+    width: 36px;
+    height: 18px;
+    left: 1216px;
+    top: 19px;
+    height: 4px;
+    width: 30px;
+    background: #000000;
+}
+
+/* cross box */
+.crossbox {
+
+    position: absolute;
+    width: 39px;
+    height: 31px;
+    left: 1214px;
+    top: 11px;
+    background: #36CC6B;
+
+}
+
+/* cross */
+.cross {
+    position: absolute;
+    width: 23.45px;
+    height: 23.69px;
+    left: 1224.28px;
+    top: 19px;
+
+    background: #000000;
+
+}
+/* Line 7 */
+.line_7 {
+
+    position: absolute;
+    width: 31.83px;
+    height: 0px;
+    left: 10px;
+    top: 20px;
+
+    border: 1px solid #000000;
+    transform: rotate(133.73deg);
+}
+
+/* Line 8 */
+.line_8 {
+    position: absolute;
+    width: 31.83px;
+    height: 0px;
+    left: 10px;
+    top: 20px;
+
+    border: 1px solid #000000;
+    transform: rotate(-133.73deg);
+}
+
+/* Text of hamburger */
+.hamburger-text {
+
+    position: absolute;
+    width: 153px;
+    height: 200px;
+    left: 0px;
+    top: 60px;
+
+    background: #36CC6B;
+}
+
+/* About */
+.about_text {
+
+
+    position: absolute;
+    width: 60px;
+    height: 24px;
+    left: 47px;
+    top: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.products_text {
+
+
+    position: absolute;
+    width: 60px;
+    height: 24px;
+    left: 47px;
+    top: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+/* Blog */
+.blog {
+    position: absolute;
+    width: 44px;
+    height: 24px;
+    left: 55px;
+    top: 62px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+
+/* Contact */
+.contact_text {
+
+    position: absolute;
+    width: 78px;
+    height: 24px;
+    left: 38px;
+    top: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.blog_text {
+
+    position: absolute;
+    width: 78px;
+    height: 24px;
+    left: 55px;
+    top: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+/* Products */
+
+
+
+/* About */
+.about {
+
+    position: absolute;
+    width: 153px;
+    height: 51px;
+    left: 1127px;
+    top: 75px;
+
+    background: #a5eba6
+    
+}
+
+/* Blog */
+.blog {
+
+    position: absolute;
+    width: 153px;
+    height: 52px;
+    left: 1127px;
+    top: 123px;
+
+    background: #79da7a;
+}
+
+/* Products */
+.products {
+
+    position: absolute;
+    width: 153px;
+    height: 51px;
+    left: 1127px;
+    top: 225px;
+
+    background: #49d65f
+}
+
+/* Contact */
+.contact {
+    position: absolute;
+    width: 153px;
+    height: 51px;
+    left: 1127px;
+    top: 175px;
+
+    background: #77de83;
+
+}
+
