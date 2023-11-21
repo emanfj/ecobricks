@@ -26,19 +26,24 @@ const Header = () => {
 
                 {/* Menu Items */}
                 {isOpen && (
-                    <><div class="crossbox">
-                            <div class="line_7"></div>
-                            <div class="line_8"></div>
-                        </div><div class="about">
-                                <div class="about_text">About</div>
-                            </div><div class="blog">
-                                <div class="blog_text">Blog</div>
-                            </div><div class="contact">
-                                <div class="contact_text">Contact</div>
-                            </div><div class="products">
-                                <div class="products_text">Products</div>
-                            </div></>
-
+                    <>
+                    <div class="crossbox">
+                        <div class="line_7"></div>
+                        <div class="line_8"></div>
+                    </div>
+                    <div class="about">
+                        <div class="about_text">About</div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog_text">Blog</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact_text">Contact</div>
+                    </div>
+                    <div class="products">
+                        <div class="products_text">Products</div>
+                    </div>
+                    </>
                 )}
             </div>
             </div>
