@@ -13,7 +13,7 @@ const Header = () => {
         <div class="header">
             <div class="header-box">
                 <div class="logo-small-1">
-                    <img src={require('./pics and vids/Logo Small.png')} alt="" />
+                    <img src={require('./Fav_Icon.png')} alt="" />
                 </div>
                 <div class="ecobricks-website">Ecobricks Website</div>
                 <div>
