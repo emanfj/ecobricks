@@ -5,15 +5,17 @@ import SocialProof from '../components/SocialProof/SocialProof'
 import Impact from '../components/Impact/Impact';
 import Footer from '../components/Footer/Footer'; 
 import Header from '../components/Header/Header';
-import Story from '../components/Story/Story';
+// import Story from '../components/Story/Story';
 
 const LandingPage = () => {
   return (
     <div>
-      <Header />
-      <Hero /> 
+      <section id='header'>
+        <Header />
+        <Hero /> 
+      </section>
       <Products />
-      <Story /> 
+      {/* <Story />  */}
       <SocialProof />
       <Impact />
       <Footer /> 
