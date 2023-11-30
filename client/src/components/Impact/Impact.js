@@ -1,5 +1,6 @@
 import React from 'react';
-import CountUp from 'react-countup';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRecycle, faSmog, faTint } from '@fortawesome/free-solid-svg-icons';
 import './Impact.css';
 
 const Impact = () => {
@@ -12,33 +13,36 @@ const Impact = () => {
       </div>
       <div className="impact-analytics">
         <div className="analytics-item">
+          <span className="numeric-analytic">2 kg/sq ft</span>
+          <hr className="impact-divider" />
+          <div className="circle">
+            <div className="circle-heading">plastic waste reduction</div> 
+            <FontAwesomeIcon icon={faRecycle} className="circle-icon" />
+          </div>
+        </div>
+        <div className="analytics-item">
+          <span className="numeric-analytic">20%</span>
+          <hr className="impact-divider" />
+          <div className="circle">
+            <div className="circle-heading">reduction in air pollution"</div>
+            <FontAwesomeIcon icon={faSmog} className="circle-icon" />
+          </div>
+        </div>
+        <div className="analytics-item">
+          <span className="numeric-analytic">98%</span>
+          <hr className="impact-divider" />
+          <div className="circle">
+            <div className="circle-heading">conservation of water</div> 
+            <FontAwesomeIcon icon={faTint} className="circle-icon" />
+          </div>
+        </div>
+        {/* <div className="analytics-item">
+          <CountUp start={0} end={100} duration={2.5} className="count-up-figure" />
+          <hr className="impact-divider"/>
           <div className="circle">
             <div className="circle-heading">landfills diverted</div>
           </div>
-          <hr className="impact-divider"/>
-          <CountUp start={0} end={100} duration={2.5} className="count-up-figure" />
-        </div>
-        <div className="analytics-item">
-          <div className="circle">
-            <div className="circle-heading">pavers produced</div>
-          </div>
-          <hr className="impact-divider"/>
-          <CountUp start={0} end={200} duration={2.5} className="count-up-figure" />
-        </div>
-        <div className="analytics-item">
-          <div className="circle">
-            <div className="circle-heading">carbon footprint reduced</div>
-          </div>
-          <hr className="impact-divider"/>
-          <CountUp start={0} end={300} duration={2.5} className="count-up-figure" />
-        </div>
-        <div className="analytics-item">
-          <div className="circle">
-            <div className="circle-heading">plastic waste recycled</div>
-          </div>
-          <hr className="impact-divider"/>
-          <CountUp start={0} end={400} duration={2.5} className="count-up-figure" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

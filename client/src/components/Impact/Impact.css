@@ -10,7 +10,7 @@
   .impact-heading {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-top:25px;
   letter-spacing: 5px;
   }
@@ -31,7 +31,7 @@
   
   .impact-analytics {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 120px; /* adding equal spacing between circles */
   flex-wrap: wrap; 
   }
@@ -44,38 +44,70 @@
   
   .circle {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border: 6px solid #36CC6B;
-  background-color: #D8ECDE;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding:10px;
+  margin-bottom:70px;
+  cursor: pointer;
+  overflow: hidden;
+  flex-direction: column;
+
   }
   
+  .circle-icon {
+    font-size: 60px;
+    color: #000; 
+    transition: opacity 0.3s ease-in-out; 
+
+  }
+
   .circle-heading {
-  font-size: 17px;
-  font-weight: 650;
-  text-align: center;
-  letter-spacing:2px;
+    /* position: absolute; */
+    font-size: 17px;
+    font-weight: 650;
+    text-align: center;
+    letter-spacing:2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
   }
+
+  .circle-icon,
+.circle-heading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
   
+  .circle:hover .circle-icon {
+    opacity: 0; /* hide the icon on hover */
+  }
+
+  .circle:hover .circle-heading {
+    opacity: 1;
+  }
+
   .impact-divider {
-  background-color: #000;
   margin: 20px;
   width: 100%;
-  margin-top:30px;
-  margin-bottom:0;
-  
+  margin-top:15px;
+  margin-bottom:15px;
+  border: 1px solid #333;
+
   }
   
-  .count-up-figure {
+  .numeric-analytic {
   font-size: 24px;
   font-weight: bold;
-  margin-top:20px;
-  margin-bottom:50px;
 
   }
 
