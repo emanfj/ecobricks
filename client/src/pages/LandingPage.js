@@ -11,7 +11,7 @@ const LandingPage = () => {
   return (
     <div>
       <section id='header'>
-        <Header />
+        {/* <Header /> */}
         <Hero /> 
       </section>
       <Products />
