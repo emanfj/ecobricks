@@ -3,6 +3,9 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  max-width: 100%; /* Set maximum width to 100% of the viewport */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

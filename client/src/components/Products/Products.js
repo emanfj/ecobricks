@@ -40,7 +40,27 @@ const Products = () => {
       productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
       productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
     },  
-
+    {
+      name: 'Recycled Bricks',
+      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
+      productLink: '/products/recycled-bricks',
+      productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
+      productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
+    },  
+    {
+      name: 'Recycled Bricks',
+      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
+      productLink: '/products/recycled-bricks',
+      productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
+      productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
+    },  
+    {
+      name: 'Recycled Bricks',
+      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
+      productLink: '/products/recycled-bricks',
+      productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
+      productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
+    },  
 
   ];
 
@@ -86,7 +106,7 @@ const Products = () => {
         </div>
       </div>
       {products.length <= 4 ? (
-        <div className="row justify-content-center"> {/* Use justify-content-center class here */}
+        <div className="row justify-content-center"> 
           {products.map((product, index) => (
             <div key={index} className="col-md-3 col-sm-6">
               <ProductsCard {...product} />
@@ -94,7 +114,7 @@ const Products = () => {
           ))}
         </div>
       ) : (
-        <Slider {...settings} style={{ margin: '0 auto' }}> {/* Use inline styling for Slider component */}
+        <Slider {...settings} style={{ margin: '0 auto' }}> 
           {products.map((product, index) => (
             <div key={index} className="col-md-3 col-sm-6">
               <ProductsCard {...product} />

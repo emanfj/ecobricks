@@ -1,169 +1,43 @@
-/* Story */
-.story {
-    position: absolute;
-    width: 1440px;
-    height: 548px;
-    left: 0px;
-    top: 900px;
-    
-    background: #E2E2E2;
+/* Story.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Story Container */
+.story-container {
+  background: #eefcea;
+  box-sizing: border-box;
+  font-family: 'Georgia';  
+  padding-left: 50px !important; /* Add left padding */
+  padding-right: 50px !important; 
+  max-width: 100%; /* Set maximum width to 100% of the viewport */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
 }
 
-/* story */
-.title_textbox{
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 28px;
-
-    position: absolute;
-    width: 248px;
-    height: 44px;
-    left: calc(50% - 248px/2 - 13.5px);
-    top: calc(50% - 44px/2 - 211px);
+/* Story Heading */
+.story-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-
-
-
-/* dot */
-.dot1 {
-    width: 12px;
-    height: 12px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    /* dot */
-
-    position: absolute;
-    border-radius: 50%;
-
-    background: #000000;
+.story-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
-/* Our Story */
-.ourstory {
-
-    width: 168px;
-    height: 44px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-
-    color: #000000;
-    padding-left: 50px;
-
-    /* Inside auto layout 
-    flex: none;
-    order: 1;
-    flex-grow: 0;*/
+/* Story Description */
+.story-description {
+  text-align: left;
 }
 
-/* dot */
-.dot2 {
-    width: 12px;
-    height: 12px;
-
-    background: #000000;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    border-radius: 50%;
-
-}
-
-
-/* Ellipse for img */
-.ellipse {
-
-    position: absolute;
-    width: 263.57px;
-    height: 364.85px;
-    left: 886.18px;
-    top: 150.04px;
-
-    background: #36CC6B;
-    transform: rotate(-60deg);
-    border-radius: 60%;
-
-}
-/* Story of the company along with mission and vision */
-.story_of_company{
-
-    position: absolute;
-    width: 575px;
-    height: 296px;
-    left: 163px;
-    top: 138px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-
-    color: #000000;
-}
-
-
-/* Rectangle 7 */
-.rectangle7{
-    
-    position: absolute;
-    width: 254px;
-    height: 57px;
-    left: 611px;
-    top: 471px;
-
-    background: #D9D9D9;
-}
-
-/* character */
-.character{
-
-    position: absolute;
-    width: 202px;
-    height: 152px;
-    left: 1035px;
-    top: 1108px;
-
-}
-
-/* Ellipse 3 */
-.ellipse3{
-
-    position: absolute;
-    width: 57px;
-    height: 59px;
-    left: 980px;
-    top: 250px;
-
-    background: #D9D9D9;
-    border-radius: 50%;
-}
-
-/* Ellipse 4 */
-.ellipse4{
-
-    position: relative;
-    width: 128px;
-    height: 100px;
-    left: 950px;
-    top: 300px;
-    border-radius: 60%;
-
-    background: #D9D9D9;
+/* Story Image */
+.story-image {
+  text-align: right;
 }
