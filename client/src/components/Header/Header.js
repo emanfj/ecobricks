@@ -14,10 +14,10 @@ const Header = () => {
     <header className="header">
       <img src={Logo} className="logo" alt="logo"/>
       <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? <FaTimes /> : <FaBars />}
-      </div>
+      {isMenuOpen ? <FaTimes /> : <FaBars />}
+    </div>
       {isMenuOpen && (
-        <div className="dropdown-menu">
+        <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`}>
           <div>about</div>
           <div>blog</div>
           <div>products</div>
