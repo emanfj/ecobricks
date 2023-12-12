@@ -30,4 +30,8 @@
   scrollbar-color: #888 #f1f1f1;
 }
 
+body {
+  font-family: 'Georgia';
+}
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
