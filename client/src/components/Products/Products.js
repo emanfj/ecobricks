@@ -40,28 +40,6 @@ const Products = () => {
       productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
       productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
     },  
-    {
-      name: 'Recycled Bricks',
-      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
-      productLink: '/products/recycled-bricks',
-      productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
-      productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
-    },  
-    {
-      name: 'Recycled Bricks',
-      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
-      productLink: '/products/recycled-bricks',
-      productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
-      productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
-    },  
-    {
-      name: 'Recycled Bricks',
-      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
-      productLink: '/products/recycled-bricks',
-      productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
-      productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
-    },  
-
   ];
 
   const [slidesToShow, setSlidesToShow] = useState(4);
