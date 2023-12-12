@@ -1,7 +1,6 @@
 /* hero section */
 .hero-section {
   position: relative;
-  padding-top: 40px;
   width: 100%;
   min-height: 100vh;
   max-width: 100%; /* Set maximum width to 100% of the viewport */
@@ -25,6 +24,7 @@ line-height: 1.2;
 font-family: 'Georgia';
 letter-spacing: 0.05em;
 color: #000000;
+margin-top: 7%;
 }
 
 .hero-tagline p {
