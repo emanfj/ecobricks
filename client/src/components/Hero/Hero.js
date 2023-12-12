@@ -22,10 +22,10 @@ const Typewriter = ({ text, delay }) => {
 
 const Hero = () => {
   const taglineText =
-    'Building a Greener Tomorrow, One Recycled Brick at a Time with Ecobricks: Transforming Waste into Sustainable Solutions';
+    'Forging a Sustainable Future';
 
   return (
-    <section className="hero-section p-5 d-flex flex-column align-items-left justify-content-center">
+    <section className="hero-section p-5 d-flex flex-column align-items-left justify-content-flex">
       <div className="hero-tagline mb-4 text-center">
         <p>
           <Typewriter text={taglineText} delay={50} />
