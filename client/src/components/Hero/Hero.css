@@ -16,7 +16,7 @@
 
 /* hero tagline */
 .hero-tagline {
-width: 50%;
+width: 52%;
 max-width: 748px;
 height: 170px;
 font-weight: bold; /* Change font-weight to bold */
@@ -24,7 +24,7 @@ line-height: 1.2;
 font-family: 'Georgia';
 letter-spacing: 0.05em;
 color: #000000;
-margin-top: 7%;
+margin-top: 5%;
 }
 
 .hero-tagline p {
@@ -42,7 +42,7 @@ font-size: 4rem; /* Set font size for the paragraph */
   align-items: center;
   width: 100%;
   max-width: 299px;
-  margin-top: 2em; /* Add spacing between tagline and button */
+  margin-top: 1em; /* Add spacing between tagline and button */
 }
 
 /* cta button text */
