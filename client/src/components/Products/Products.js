@@ -94,6 +94,7 @@ const Products = () => {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
+    
   };
 
   return (
@@ -114,7 +115,7 @@ const Products = () => {
           ))}
         </div>
       ) : (
-        <Slider {...settings} style={{ margin: '0 auto' }}> 
+        <Slider {...settings} style={{ maxWidth: '80%',margin: '0 auto' }}> 
           {products.map((product, index) => (
             <div key={index} className="col-md-3 col-sm-6">
               <ProductsCard {...product} />

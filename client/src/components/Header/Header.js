@@ -1,52 +1,31 @@
 import React, { useState } from 'react';
-import './Header.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../../assets/logo-small.png';
+import './Header.css'; 
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
   };
 
   return (
-    <div className="header">
-      <div className="header-box">
-        <div className="logo-small-1">
-          <img src={require('./Fav_Icon.png')} alt="" />
-        </div>
-        <div className="ecobricks-website">Ecobricks Website</div>
-        <div>
-          {/* Menu Icon */}
-          <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={handleClick}>
-            <div className="hamburger"></div>
-            <div className="hamburger" style={{ top: '28px' }}></div>
-            <div className="hamburger" style={{ top: '37px' }}></div>
-          </div>
-
-          {/* Menu Items */}
-          {isOpen && (
-            <>
-              <div className="crossbox">
-                <div className="line_7"></div>
-                <div className="line_8"></div>
-              </div>
-              <div className="about">
-                <div className="about_text">About</div>
-              </div>
-              <div className="blog">
-                <div className="blog_text">Blog</div>
-              </div>
-              <div className="contact">
-                <div className="contact_text">Contact</div>
-              </div>
-              <div className="products">
-                <div className="products_text">Products</div>
-              </div>
-            </>
-          )}
-        </div>
+    <header className="header">
+      <img src={Logo} className="logo" alt="logo"/>
+      <div className="menu-icon" onClick={toggleMenu}>
+        {isMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
-    </div>
+      {isMenuOpen && (
+        <div className="dropdown-menu">
+          <div>about</div>
+          <div>blog</div>
+          <div>products</div>
+          <div>contact</div>
+          <div>gallery</div>
+        </div>
+      )}
+    </header>
   );
 };
 
