@@ -82,19 +82,19 @@ const SocialProof = () => {
   ];
 
   const partnerLogos = [
-    { image: `${process.env.PUBLIC_URL}/BattleofMinds.png`, link: 'https://competition.bat-battleofminds.com/' },
-    { image: `${process.env.PUBLIC_URL}/Capital_Smart_City.png`, link: 'https://www.smartcitypk.com/' },
-    { image: `${process.env.PUBLIC_URL}/ClimateLaunchpad.png`, link: 'https://finals.climatelaunchpad.org/regional-finals/asia-pacific/' },
-    { image: `${process.env.PUBLIC_URL}/GSEA.png`, link: 'https://www.gsea.pk/' },
-    { image: `${process.env.PUBLIC_URL}/Hatch8.png`, link: 'https://nstp.pk/innovate-pakistan/innovation-centre/hatch-8/' },
-    { image: `${process.env.PUBLIC_URL}/Molecule.png`, link: 'https://molecule.com.pk/' },
-    { image: `${process.env.PUBLIC_URL}/NICS.png`, link: 'https://nep.pitb.gov.pk/node/588' },
-    { image: `${process.env.PUBLIC_URL}/NSTP.png`, link: 'https://nstp.pk/' },
-    { image: `${process.env.PUBLIC_URL}/NUST.png`, link: 'https://www.nust.edu.pk' },
-    { image: `${process.env.PUBLIC_URL}/RisingStar.png`, link: 'https://nust.edu.pk/news/nstp-and-u-s-embassy-host-finale-of-rising-stars-startup-competition-empowering-women-and-minority-entrepreneurs-in-pakistan/' },
-    { image: `${process.env.PUBLIC_URL}/SC.png`, link: 'https://scwomenintech.co.zm/' },
-    { image: `${process.env.PUBLIC_URL}/SEED.png`, link: 'https://seedventures.org/' },
-    { image: `${process.env.PUBLIC_URL}/Unilever.png`, link: 'https://www.unilever.pk/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/BattleofMinds.png`, link: 'https://competition.bat-battleofminds.com/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/Capital_Smart_City.png`, link: 'https://www.smartcitypk.com/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/ClimateLaunchpad.png`, link: 'https://finals.climatelaunchpad.org/regional-finals/asia-pacific/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/GSEA.png`, link: 'https://www.gsea.pk/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/Hatch8.png`, link: 'https://nstp.pk/innovate-pakistan/innovation-centre/hatch-8/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/Molecule.png`, link: 'https://molecule.com.pk/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/NICS.png`, link: 'https://nep.pitb.gov.pk/node/588' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/NSTP.png`, link: 'https://nstp.pk/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/NUST.png`, link: 'https://www.nust.edu.pk' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/RisingStar.png`, link: 'https://nust.edu.pk/news/nstp-and-u-s-embassy-host-finale-of-rising-stars-startup-competition-empowering-women-and-minority-entrepreneurs-in-pakistan/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/SC.png`, link: 'https://scwomenintech.co.zm/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/SEED.png`, link: 'https://seedventures.org/' },
+    { image: `${process.env.PUBLIC_URL}/collaborations/Unilever.png`, link: 'https://www.unilever.pk/' },
   ];
 
   const [slidesToShow, setSlidesToShow] = useState(3);
