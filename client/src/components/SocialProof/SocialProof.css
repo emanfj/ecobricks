@@ -8,12 +8,44 @@
     align-items: center; 
 }
 
+<<<<<<< HEAD
+=======
+/* Social proof heading */
+.social-proof-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 55px;
+    letter-spacing: 5px;
+}
+
+/* Dot in the social proof heading */
+.socialproof-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* Testimonials heading */
+.testimonials-heading,
+.collaborations-heading {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+>>>>>>> 6ee7aa0e512938adc6b1887c3357c29ef7e22733
 /* Testimonial cards container */
 .testimonial-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
 
 /* Individual testimonial card */
 .testimonial-card {
@@ -27,7 +59,11 @@
     box-sizing: border-box; 
     position:relative;
     overflow: hidden; 
-
+    border: none;
+    margin: 15px;
+    border-radius: 25px;
+    background-color: #ADCDB6;
+    overflow: hidden;
 }
 
 /* Testimonial name */
@@ -47,7 +83,7 @@
     text-align: left;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Number of lines to show before adding ellipsis */
+    -webkit-line-clamp: 3; /* number of lines to show before adding ellipsis */
     -webkit-box-orient: vertical;
 
 }
@@ -62,7 +98,7 @@
     right: 0;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 15px;   
     background-color: #5F7464;
     color: white;
     border-bottom-left-radius: 25px;
@@ -80,6 +116,24 @@
     vertical-align: baseline;
 }
 
+/* .slick-dots {
+    margin-top: 40px !important;
+} */
+
+/* hiding the default text for arrows */
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    display: none;
+  }
+  
+  /* customised styles for the arrows */
+  .slick-prev::before, .slick-next::before {
+    font-size:1.5rem;
+    color: #a3b4a8; /* arrow color */
+  }
+ 
+  
 /* Collaboration logos container */
 .collaborations {
     display: flex;
@@ -93,8 +147,8 @@
 
 /* Individual collaboration logo */
 .collaboration-logos {
-    max-width: 80px;
-    max-height: 80px;
+    width: 10rem; 
+    height: auto; /* maintaining aspect ratio */
     object-fit: contain;
 }
 
