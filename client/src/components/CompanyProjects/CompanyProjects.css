@@ -45,6 +45,7 @@
 .card-title {
   max-width: 80%;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .icon-container {
@@ -55,12 +56,12 @@
 
 .icon {
   cursor: pointer;
-  font-size: 1em; /* Set the initial font size */
+  font-size: 1.5em; /* Set the initial font size */
   transition: font-size 0.1s ease-in-out; 
 }
 
 .icon:hover {
-  font-size: 1.25em; /* Adjust the size increase as needed */
+  font-size: 2em; /* Adjust the size increase as needed */
 }
 
 

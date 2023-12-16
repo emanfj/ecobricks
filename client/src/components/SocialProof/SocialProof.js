@@ -52,20 +52,6 @@ const SocialProof = () => {
     });
   }, []);
 
-<<<<<<< HEAD
-    return (
-        <section className="social-proof-container">
-        <div className="testimonial-cards">
-            {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} {...testimonial} />
-            ))}
-        </div>
-
-        <div className="collaborations">
-            {partnerLogos.map((logo, index) => (
-            <img key={index} className="collaboration-logos" src={logo} alt={`Logo ${index + 1}`} />
-            ))}
-=======
   const testimonialsData = [
     {
       name: 'ABC Company',
@@ -153,13 +139,6 @@ const SocialProof = () => {
   return (
     <Container fluid className="social-proof-container" style={{ background: '#EEFCEA', textAlign: 'center' }}>
       {/* testimonials Section */}
-      <div className="row" style={{ marginTop: '4rem' }}>
-        <div className="col-12 text-center products-heading">
-          <div className="socialproof-dot"></div>
-          <div className="testimonials-heading">testimonials</div>
-          <div className="socialproof-dot"></div>
-        </div>
-      </div>
       <Slider {...slickSettings} className="testimonial-cards " style={{ width: '70%',margin: '4rem auto 4rem'}}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index}>
@@ -174,7 +153,6 @@ const SocialProof = () => {
           <div className="socialproof-dot"></div>
           <div className="collaborations-heading">collaborations</div>
           <div className="socialproof-dot"></div>
->>>>>>> 6ee7aa0e512938adc6b1887c3357c29ef7e22733
         </div>
       </div>
       <Row className="collaborations justify-content-center" style={{ marginBottom: '4rem' }}>
