@@ -60,22 +60,12 @@ const SocialProof = () => {
 
     return (
         <section className="social-proof-container">
-        <div className="social-proof-heading">
-            <div className="socialproof-dot"></div>
-            <div className="testimonials-heading">testimonials</div>
-            <div className="socialproof-dot"></div>
-        </div>
         <div className="testimonial-cards">
             {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
             ))}
         </div>
 
-        <div className="social-proof-heading">
-            <div className="socialproof-dot"></div>
-            <div className="collaborations-heading">collaborations</div>
-            <div className="socialproof-dot"></div>
-        </div>
         <div className="collaborations">
             {partnerLogos.map((logo, index) => (
             <img key={index} className="collaboration-logos" src={logo} alt={`Logo ${index + 1}`} />

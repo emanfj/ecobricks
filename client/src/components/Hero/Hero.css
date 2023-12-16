@@ -1,65 +1,43 @@
 /* hero section */
 .hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  max-width: 100%; /* Set maximum width to 100% of the viewport */
-  margin-left: auto; /* Center the container horizontally */
-  margin-right: auto;
+  min-height: 90vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 50px;
-  box-sizing: border-box; /* Include padding in the width calculation */
-}  
+  box-sizing: border-box;
+  font-family: 'Georgia';
+}
 
 /* hero tagline */
 .hero-tagline {
-width: 52%;
-max-width: 748px;
-height: 170px;
-font-weight: bold; /* Change font-weight to bold */
-line-height: 1.2;
-font-family: 'Georgia';
-letter-spacing: 0.05em;
-color: #000000;
-margin-top: 5%;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .hero-tagline p {
-text-align: left;
-color: #00B347;
-font-size: 4rem; /* Set font size for the paragraph */
-
-}
-
-/* cta button */
-.cta-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 299px;
-  margin-top: 1em; /* Add spacing between tagline and button */
-}
-
-/* cta button text */
-.cta-button button {
-  width: 100%;
-  font-family: 'Georgia';
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-top: 1em;
-  line-height: 1.2;
-  text-transform: capitalize;
-  color: #000000;
-  border: none;
-  background-color: #36CC6B; /* Background color moved from .cta-button to button */
-  border-radius: 12px;
-  padding: 10px; /* Added padding for better button appearance */
+  font-size: 3.5rem;
+  margin-bottom: 0;
 }
 
 
+.hero-description {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .hero-tagline p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-tagline p {
+    font-size: 2rem;
+  }
+
+}

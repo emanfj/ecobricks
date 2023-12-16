@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
+import {  Container, Row, Col } from 'react-bootstrap';
 import './Hero.css';
 
 const Typewriter = ({ text, delay }) => {
@@ -21,21 +21,30 @@ const Typewriter = ({ text, delay }) => {
 };
 
 const Hero = () => {
-  const taglineText =
-    'Forging a Sustainable Future';
+  const taglineText = 'One Solution, Triple Impact';
 
   return (
-    <section className="hero-section p-5 d-flex flex-column align-items-left justify-content-flex">
-      <div className="hero-tagline mb-4 text-center">
-        <p>
-          <Typewriter text={taglineText} delay={50} />
-        </p>
-      </div>
-      <div className="cta-button w-100 max-w-299px">
-        <Button variant="success" className="w-100">
-          Get to know us!
-        </Button>
-      </div>
+    <section className="hero-section d-flex align-items-center justify-content-center">
+      <Container>
+        <Row className="mb-4 text-center">
+          <Col xs={12}>
+            <div className="hero-tagline">
+              <p>
+                <Typewriter text={taglineText} delay={50} />
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row className="mb-4 text-center">
+          <Col xs={12}>
+            <div className="hero-description">
+              <p>
+                Innovative concrete alternative for a carbon-negative future. Crafting premium building products from non-recycled plastics. Building the sustainable framework for tomorrow's cities.
+              </p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

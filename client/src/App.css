@@ -31,3 +31,8 @@
 }
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #427e31;
+  color: #eefcea; /* Set the text color for the description */
+}

@@ -1,0 +1,84 @@
+.project-card {
+  position: relative;
+  overflow: hidden;
+  height: 90%; 
+  border-radius: 10%;
+
+}
+
+.card-img-container {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.project-card:hover .card-img-container img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-card .card-img-container img {
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.card-title {
+  max-width: 80%;
+  text-align: center;
+}
+
+.icon-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1em; /* Set the initial font size */
+  transition: font-size 0.1s ease-in-out; 
+}
+
+.icon:hover {
+  font-size: 1.25em; /* Adjust the size increase as needed */
+}
+
+
+.modal-content {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  max-width: 100vw;
+  max-height: 90vh;
+  margin: auto;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10%;
+}

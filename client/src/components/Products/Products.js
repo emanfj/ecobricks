@@ -77,13 +77,6 @@ const Products = () => {
 
   return (
     <section className="container-fluid products-container">
-      <div className="row">
-        <div className="col-12 text-center products-heading">
-          <div className="products-dot"></div>
-          <div className="products-heading">products</div>
-          <div className="products-dot"></div>
-        </div>
-      </div>
       {products.length <= 4 ? (
         <div className="row justify-content-center"> 
           {products.map((product, index) => (

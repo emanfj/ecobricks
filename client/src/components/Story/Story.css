@@ -1,40 +1,26 @@
-/* Story.css */
-@import '~bootstrap/dist/css/bootstrap.min.css';
-
 /* Story Container */
 .story-container {
-  background: #eefcea;
   box-sizing: border-box;
-  font-family: 'Georgia';  
+  font-family: 'Georgia', serif;  /* Added backup generic serif font */
   padding-left: 50px !important; /* Add left padding */
   padding-right: 50px !important; 
   /* max-width: 100%;  */
   margin-left: auto; /* Center the container horizontally */
   margin-right: auto;
-}
-
-/* Story Heading */
-.story-heading {
+  font-size: 16px; /* Adjust the default font size */
+  line-height: 1.6; /* Adjust the line height for better readability */
+  color: #333; /* Set the default text color */
   display: flex;
-  align-items: center;
   justify-content: center;
-  letter-spacing: 5px;
-  color: #000000;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.story-dot {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  margin: 0 10px;
+  align-items: center;
+  padding-top: 0;
 }
 
 /* Story Description */
 .story-description {
   text-align: left;
+  font-size: 18px; /* Adjust the font size for the description */
+  color: #ffffff; /* Set the text color for the description */
 }
 
 /* Story Image */

@@ -6,11 +6,6 @@ import './Impact.css';
 const Impact = () => {
   return (
     <section className="impact-container">
-      <div className="impact-heading">
-        <div className="impact-dot"></div>
-        <div className="impact">our impact</div>
-        <div className="impact-dot"></div>
-      </div>
       <div className="impact-analytics">
         <div className="analytics-item">
           <span className="numeric-analytic">2 kg/sq ft</span>
