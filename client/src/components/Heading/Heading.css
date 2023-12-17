@@ -1,0 +1,20 @@
+/* HeadingComponent.css */
+.header-container {
+    box-sizing: border-box;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+.title {
+    font-size: 1em; /* Adjust the font size for the title */
+    text-align: center;
+  }
+  
+  
+.detail {
+    text-align: center;
+    font-size: 2em; /* Adjust the font size for the detail */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a glow effect to the detail */
+    font-weight: 700;
+    color: #eefcea;
+}

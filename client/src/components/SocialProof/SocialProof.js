@@ -139,13 +139,6 @@ const SocialProof = () => {
   return (
     <Container fluid className="social-proof-container" style={{ background: '#EEFCEA', textAlign: 'center' }}>
       {/* testimonials Section */}
-      <div className="row" style={{ marginTop: '4rem' }}>
-        <div className="col-12 text-center products-heading">
-          <div className="socialproof-dot"></div>
-          <div className="testimonials-heading">testimonials</div>
-          <div className="socialproof-dot"></div>
-        </div>
-      </div>
       <Slider {...slickSettings} className="testimonial-cards " style={{ width: '70%',margin: '4rem auto 4rem'}}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index}>

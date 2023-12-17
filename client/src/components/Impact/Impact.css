@@ -4,23 +4,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  background-color: #EEFCEA;
-  }
-  
-  .impact-heading {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  margin-top:25px;
-  letter-spacing: 5px;
-  }
-  
-  .impact-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000;
-  margin: 0 5px;
   }
   
   .impact {
