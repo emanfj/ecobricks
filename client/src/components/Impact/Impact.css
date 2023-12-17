@@ -105,6 +105,12 @@
 
   }
   
+  .impact-progress-bar {
+    height: 8px; /* Adjust the height to make the progress bar thinner */
+    border: none; /* Remove the default border */
+    background-color: #ddd; /* Set a background color for the progress bar */
+  }
+  
   .numeric-analytic {
   font-size: 24px;
   font-weight: bold;
