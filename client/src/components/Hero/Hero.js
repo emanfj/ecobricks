@@ -39,6 +39,15 @@ const Hero = () => {
           <Col xs={12}>
             <div className="hero-description">
               <p>
+                People, Profit, & Planet
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row className="mb-4 text-center">
+          <Col xs={12}>
+            <div className="hero-description">
+              <p>
                 Innovative concrete alternative for a carbon-negative future. Crafting premium building products from non-recycled plastics. Building the sustainable framework for tomorrow's cities.
               </p>
             </div>
