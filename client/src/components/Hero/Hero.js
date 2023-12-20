@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import {  Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './Hero.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState('');
@@ -9,8 +11,8 @@ const Typewriter = ({ text, delay }) => {
   useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
+        setCurrentText((prevText) => prevText + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
       }, delay);
 
       return () => clearTimeout(timeout);
@@ -23,8 +25,13 @@ const Typewriter = ({ text, delay }) => {
 const Hero = () => {
   const taglineText = 'One Solution, Triple Impact';
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section className="hero-section d-flex align-items-center justify-content-center">
+    <section
+      className="hero-section d-flex align-items-center justify-content-center">
       <Container>
         <Row className="mb-4 text-center">
           <Col xs={12}>
@@ -35,7 +42,12 @@ const Hero = () => {
             </div>
           </Col>
         </Row>
-        <Row className="mb-4 text-center">
+        <Row
+          className="mb-4 text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="2000"
+        >
           <Col xs={12}>
             <div className="hero-description">
               <p>

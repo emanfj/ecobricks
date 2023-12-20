@@ -25,9 +25,9 @@ const LandingPage = () => {
         <Header />
         <Hero /> 
       </section>
-      <Heading title="STORY" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="STORY" detail="Where the Journey Began" />
       <Story /> 
-      <Heading title="PRODUCTS" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="PRODUCTS" detail="Innovation in Every Brick" />
       <Products />
       <Heading title="GREEN INTERLOCKING PAVING TILE" detail="Lorem Gpsum Dolor Sit Amet" />
       <BrickColorsInsight />

@@ -1,23 +1,22 @@
-/* Products.css */
-@import '~bootstrap/dist/css/bootstrap.min.css';
-
 /* Products Container */
 .products-container {
   box-sizing: border-box;
   font-family: 'Georgia';
-  padding-bottom: 4%;
+  padding: 4%;
+  padding-top: 0;
 }
-
 
 /* Product Card */
 .product-card {
-  border-radius: 10%;
-  min-height: 85%; 
+  border-radius: 10% !important;
+  min-height: 85%;
   display: flex;
   align-items: center;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add margin to create spacing between cards */
+  box-sizing: border-box; /* Ensure that padding and border are included in the width and height */
 }
 
 .product-card:hover {
@@ -31,8 +30,7 @@
 }
 
 .product-card__name {
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 1.25rem !important; 
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.05em;
@@ -44,7 +42,7 @@
 }
 
 .product-card__about {
-  font-size: 14px;
+  font-size: 0.75rem;
   line-height: 1.5;
   text-align: center;
   color: #000;
@@ -59,4 +57,29 @@
 .card {
   border: none;
   margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .product-card__name {
+    font-size: 1rem !important; /* Decrease font size for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+
+  .product-card__image {
+    width: 100%; /* Make the image responsive */
+  }
+}
+
+
+@media (max-width: 576px) {
+  .product-card {
+    border-radius: 8%; 
+    margin: 5px auto; /* Center the card horizontally */
+    max-width: 60%;
+    margin-bottom: 10%;
+  }
+
 }

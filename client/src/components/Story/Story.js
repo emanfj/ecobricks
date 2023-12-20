@@ -1,18 +1,36 @@
-// Story.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Story.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap styles
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Story = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section className="container-fluid story-container">
+    <section
+      className="container-fluid story-container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="row justify-content-center align-items-center">
-        <div className="col-md-7 order-md-1 story-description">
+        <div
+          className="col-md-7 order-md-1 story-description"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec nulla id justo convallis fringilla. Vestibulum dapibus dolor sit amet dui efficitur tincidunt. Proin vel quam vitae elit aliquet dignissim. Phasellus commodo, libero in tincidunt auctor, lacus justo convallis mi, non fermentum dolor metus nec massa. Fusce non dolor ut ante dapibus laoreet. Quisque vel accumsan augue, vel euismod nisl. Nullam fermentum nec orci sit amet suscipit. In hac habitasse platea dictumst. Suspendisse potenti. Sed ut felis eget purus tincidunt scelerisque in non est. Vivamus semper diam vitae libero fermentum, at blandit sem semper. Nullam sodales lectus in tortor vestibulum, vel fermentum tortor dapibus. Integer quis ante eu purus bibendum dapibus. Phasellus scelerisque risus vel diam malesuada fermentum.
+            EcoBricks, founded by Kashaf Akhtar from Sarghoda, emerged from her journey in mechanical engineering at NUST. Fueled by a vision for sustainability, Kashaf transformed plastic waste into eco-friendly bricks to combat brick kiln pollution. With NUST's backing, her startup succeeded in Texilla, earning international acclaim and awards. EcoBricks epitomizes the triple bottom line—people, planet, profit—redefining construction by repurposing waste for a greener future. Explore Kashaf's innovative legacy on EcoBricks' website.
           </p>
         </div>
-        <div className="col-md-4 order-md-2 story-image text-md-right">
+        <div
+          className="col-md-4 order-md-2 story-image text-md-right"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
           <img src="/story-image.png" alt="Story" className="img-fluid" />
         </div>
       </div>
