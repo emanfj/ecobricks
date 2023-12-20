@@ -1,0 +1,21 @@
+
+  
+  .sdg-row {
+    margin-top: 20px;
+  }
+  
+  .sdg-col {
+    margin-bottom: 20px;
+  }
+  
+  .sdg-card {
+    background-color: #ffffff;
+    border-radius: 6px; /* Adjust border-radius */
+    padding: 6px; /* Adjust padding */
+    margin:10px;
+    box-shadow: 0 2px 4px rgba(12, 11, 11, 0.1); /* Adjust box-shadow */
+  }
+  
+  
+
+  
