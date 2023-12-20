@@ -5,12 +5,13 @@ import 'slick-carousel/slick/slick-theme.css';
 import './SocialProof.css';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { Card, Container, Row, Col } from 'react-bootstrap';
+import Heading from '../Heading/Heading';
 
 const TestimonialCard = ({ name, testimonial, blogLink }) => (
   <Card
     className="testimonial-card"
     style={{
-      backgroundColor: '#ADCDB6',
+      // backgroundColor: '#ADCDB6',
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
       borderRadius: '25px',
       height: '300px',
@@ -19,7 +20,7 @@ const TestimonialCard = ({ name, testimonial, blogLink }) => (
   >
     <Card.Body style={{ display: 'flex', flexDirection: 'column' }}>
       <div>
-        <Card.Title className="testimonial-card__name" style={{ color: '#36CC6B', fontSize: '1.5rem', fontWeight: '300' }}>
+        <Card.Title className="testimonial-card__name" style={{ fontSize: '1.5rem', fontWeight: '500' }}>
           {name}
         </Card.Title>
         <Card.Text className="testimonial-card__testimonial" style={{ color: '#000000', marginTop: '1rem' }}>
@@ -27,7 +28,7 @@ const TestimonialCard = ({ name, testimonial, blogLink }) => (
         </Card.Text>
       </div>
       <div>
-        <a className="testimonial-card__link" href={blogLink} style={{ backgroundColor: '#5F7464', color: 'white', paddingLeft: '2rem' }}>
+        <a className="testimonial-card__link" href={blogLink} style={{ color: 'white', paddingLeft: '2rem' }}>
           Read Story{' '}
           <FaLongArrowAltRight
             className="readstory-arrow"
@@ -38,6 +39,26 @@ const TestimonialCard = ({ name, testimonial, blogLink }) => (
     </Card.Body>
   </Card>
 );
+
+const CollaborationLogo = ({ image, link }) => {
+  // const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <Col xs={6} md={4} lg={2} className="collaboration-logo-col">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          className= "collaboration-logos medium-size"
+          // className={`collaboration-logos medium-size ${isHovered ? 'colorized' : ''}`}
+
+          src={image}
+          alt="Collaboration Logo"
+          // onMouseEnter={() => setIsHovered(true)}
+          // onMouseLeave={() => setIsHovered(false)}
+        />
+      </a>
+    </Col>
+  );
+};
 
 const SocialProof = () => {
   useEffect(() => {
@@ -137,7 +158,7 @@ const SocialProof = () => {
 
   
   return (
-    <Container fluid className="social-proof-container" style={{ background: '#EEFCEA', textAlign: 'center' }}>
+    <Container fluid className="social-proof-container" style={{ textAlign: 'center' }}>
       {/* testimonials Section */}
       <Slider {...slickSettings} className="testimonial-cards " style={{ width: '70%',margin: '4rem auto 4rem'}}>
         {testimonialsData.map((testimonial, index) => (
@@ -148,20 +169,11 @@ const SocialProof = () => {
       </Slider>
 
       {/* collaborations Section */}
-      <div className="row" style={{ marginTop: '4rem', marginBottom: '4rem' }}>
-        <div className="col-12 text-center products-heading">
-          <div className="socialproof-dot"></div>
-          <div className="collaborations-heading">collaborations</div>
-          <div className="socialproof-dot"></div>
-        </div>
-      </div>
-      <Row className="collaborations justify-content-center" style={{ marginBottom: '4rem' }}>
+      <Heading title="COLLABORATIONS" detail="Lorem Gpsum Dolor Sit Amet" />
+
+      <Row className="collaborations justify-content-center">
         {partnerLogos.map((item, index) => (
-          <Col key={index} xs={6} md={4} lg={2}>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <img className="collaboration-logos medium-size" src={item.image} alt={`Logo ${index + 1}`} />
-            </a>
-          </Col>
+          <CollaborationLogo key={index} {...item} />
         ))}
       </Row>
     </Container>

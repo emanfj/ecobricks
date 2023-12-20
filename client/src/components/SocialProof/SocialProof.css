@@ -4,6 +4,7 @@
     text-align: center;
     box-sizing: border-box;
     display: flex;
+    background-color: transparent;
     flex-direction: column;
     align-items: center; 
 }
@@ -24,7 +25,7 @@
     height: 310px;
     padding: 10px 20px;
     border-radius: 25px;
-    background-color: #ADCDB6;
+    background-color: #6bc282;
     margin: 0 30px; 
     box-sizing: border-box; 
     position:relative;
@@ -32,8 +33,9 @@
     border: none;
     margin: 15px;
     border-radius: 25px;
-    background-color: #ADCDB6;
     overflow: hidden;
+    box-shadow: 0 0 10px rgba(73, 97, 61, 0.1);
+
 }
 
 /* Testimonial name */
@@ -42,8 +44,10 @@
     margin-bottom: 5px;
     letter-spacing: 3px;
     font-style: italic;
-    font-weight: 500;
-    color: #36CC6B;
+    font-weight: 800;
+    color: #00ff59;
+    text-shadow: 0 0 0.5px #00ff00, 0 0 1px #00ff00, 0 0 1.5px #00ff00; 
+
 }
 
 /* Testimonial text */
@@ -69,7 +73,7 @@
     display: flex;
     align-items: center;
     padding: 15px;   
-    background-color: #5F7464;
+    background-color: #04310e;
     color: white;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -100,7 +104,7 @@
   /* customised styles for the arrows */
   .slick-prev::before, .slick-next::before {
     font-size:1.5rem;
-    color: #a3b4a8; /* arrow color */
+    color: #ffffff; /* arrow color */
   }
  
   
@@ -111,7 +115,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 25px; 
-    margin-bottom: 50px;
+    background-color:#ffffff;
+    
 
 }
 
@@ -120,6 +125,11 @@
     width: 10rem; 
     height: auto; /* maintaining aspect ratio */
     object-fit: contain;
+    margin: 2rem auto 2rem;
+    /* filter: grayscale(100%); */
+    /* transition: filter 0.1s cubic-bezier(0.4, 0.2, 0.2, 1); */
 }
 
-
+/* .collaboration-logos.colorized {
+    filter: grayscale(0%);
+  } */
