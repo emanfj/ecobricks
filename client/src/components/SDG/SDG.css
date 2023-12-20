@@ -10,10 +10,10 @@
   
   .sdg-card {
     background-color: #ffffff;
-    border-radius: 6px; /* Adjust border-radius */
-    padding: 6px; /* Adjust padding */
+    border-radius: 6px; 
+    padding: 6px; 
     margin:10px;
-    box-shadow: 0 2px 4px rgba(12, 11, 11, 0.1); /* Adjust box-shadow */
+    box-shadow: 0 2px 4px rgba(12, 11, 11, 0.1); 
   }
   
   

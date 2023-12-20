@@ -8,18 +8,18 @@
 .insight-title {
   font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 1em; /* Use em for spacing */
+  margin-bottom: 1em; 
 }
 
 .insight-item {
   /* text-align: right; */
   margin-right:0;
   margin-left:0;
-  margin-bottom: 6.5em; /* Add space between insight items */
+  margin-bottom: 6.5em; 
 }
 
 .insight-icon {
-  width: 4.5em; /* Adjust the size of the icon as needed */
+  width: 4.5em; 
   height: 4.5em;
 }
 
@@ -35,7 +35,7 @@
 
 .main-image {
   width: 100%;
-  max-width: 22em; /* Use em or another flexible unit */
+  max-width: 22em; 
 }
 
 .brick-colors-row {
@@ -46,14 +46,14 @@
 }
 
 .brick-colors-row img {
-  width: 6em; /* Use em or another flexible unit */
-  height: 7.5em; /* Use em or another flexible unit */
+  width: 6em; 
+  height: 7.5em; 
   margin: 0;
   transition: transform 0.3s;
 }
 
 .brick-colors-row .col {
-  padding: 0; /* Remove the default padding */
+  padding: 0; /* removing the default padding */
 }
 
 .brick-colors-row img:hover {
@@ -61,8 +61,8 @@
 }
 
 .brick-colors-insight {
-  margin-left: -15px; /* Adjust as needed */
-  margin-right: -15px; /* Adjust as needed */
+  margin-left: -15px; 
+  margin-right: -15px; 
 }
 
 .brick-colors-insight > .col {
