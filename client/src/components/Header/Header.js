@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../../assets/logo-small.png';
-import './Header.css'; 
+import Burger from '@animated-burgers/burger-arrow';
+import '@animated-burgers/burger-arrow/dist/styles.css';
+import { Image } from 'react-bootstrap';
+import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const publicUrl = process.env.PUBLIC_URL;
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -12,17 +14,19 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src={Logo} className="logo" alt="logo"/>
+      <Image src={`${publicUrl}/logo-transparent-white.png`} alt="Ecobricks LOGO" className="logo" />
       <div className="menu-icon" onClick={toggleMenu}>
-      {isMenuOpen ? <FaTimes /> : <FaBars />}
-    </div>
+        <Burger isOpen={isMenuOpen} direction="down" />
+      </div>
       {isMenuOpen && (
-        <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`}>
-          <div>about</div>
-          <div>blog</div>
-          <div>products</div>
-          <div>contact</div>
-          <div>gallery</div>
+        <div className="dropdown">
+          <ul className={`dropdown-content ${isMenuOpen ? 'open' : ''}`}>
+            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">About</a></li>
+            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Product</a></li>
+            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Blog</a></li>
+            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Contact</a></li>
+            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Gallery</a></li>
+          </ul>
         </div>
       )}
     </header>
