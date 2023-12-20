@@ -32,11 +32,13 @@
 
 body {
   font-family: 'Georgia';
+  overflow-x: hidden;
+
 }
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background-color: #427e31;
-  color: #eefcea; /* Set the text color for the description */
+  background-color: #265C00;
+  color: #eefcea; /* set the text color for the description */
 }
