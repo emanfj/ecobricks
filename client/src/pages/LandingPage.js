@@ -23,11 +23,11 @@ const LandingPage = () => {
         <Header />
         <Hero /> 
       </section>
-      <Heading title="STORY" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="STORY" detail="Where the Journey Began" />
       <Story /> 
-      <Heading title="PRODUCTS" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="PRODUCTS" detail="Innovation in Every Brick" />
       <Products />
-      <Heading title="PROJECTS" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="PROJECTS" detail="Building Success Stories" />
       <CompanyProjects />
       <Heading title="SOCIAL PROOF" detail="Lorem Gpsum Dolor Sit Amet" />
       <SocialProof />

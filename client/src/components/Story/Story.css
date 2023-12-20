@@ -1,15 +1,10 @@
 /* Story Container */
 .story-container {
   box-sizing: border-box;
-  font-family: 'Georgia', serif;  /* Added backup generic serif font */
-  padding-left: 50px !important; /* Add left padding */
-  padding-right: 50px !important; 
-  /* max-width: 100%;  */
-  margin-left: auto; /* Center the container horizontally */
-  margin-right: auto;
-  font-size: 16px; /* Adjust the default font size */
-  line-height: 1.6; /* Adjust the line height for better readability */
-  color: #333; /* Set the default text color */
+  font-family: 'Georgia', serif;
+  padding: 2rem; /* Use rem for padding */
+  font-size: 1rem; /* Use rem for font size */
+  line-height: 1.6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +14,54 @@
 /* Story Description */
 .story-description {
   text-align: left;
-  font-size: 18px; /* Adjust the font size for the description */
-  color: #ffffff; /* Set the text color for the description */
+  font-size: 1.125rem; /* Use rem for font size */
+  color: #ffffff;
 }
 
 /* Story Image */
 .story-image {
   text-align: right;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 62em) {
+  /* Equivalent to 992px */
+  .story-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .story-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 48em) {
+  /* Equivalent to 768px */
+  .story-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .story-description {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 36em) {
+  /* Equivalent to 576px */
+  .story-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .story-description {
+    font-size: 0.75rem; /* Adjust font size for even smaller screens */
+  }
+
+  .story-image {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }

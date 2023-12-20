@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   height: 90%; 
-  border-radius: 10%;
+  border-radius: 10% !important;
 
 }
 
@@ -67,14 +67,16 @@
 
 .modal-content {
   text-align: center;
-  background-color: transparent;
-  border: none;
+  background-color: transparent !important; /* Change background color to transparent */
+  border-radius: 10%;
 }
 
 .modal-body {
   max-width: 100vw;
   max-height: 90vh;
   margin: auto;
+  border-radius: 10%;
+  background-color: transparent !important; /* Change background color to transparent */
 }
 
 .modal img {
@@ -82,4 +84,22 @@
   max-height: 90%;
   object-fit: contain;
   border-radius: 10%;
+}
+
+
+/* Media Queries for CompanyProjects */
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 70%;
+    margin: auto; /* Add margin:auto to center columns *  }
+
+  .project-card {
+    height: 70%; /* Allow height to adjust based on content */
+  }
+
+  .card-img-container img {
+    transform: scale(1); /* Reset the scale for smaller screens */
+  }
+
+
 }

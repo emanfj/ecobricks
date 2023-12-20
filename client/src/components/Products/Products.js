@@ -7,6 +7,14 @@ import './Products.css';
 const ProductsCard = ({ name, description, productImage1, productImage2, productLink }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  // Replace '\n' with <br> for line breaks in description
+  const formattedDescription = description.split('\n').map((item, key) => (
+    <span key={key}>
+      {item}
+      <br />
+    </span>
+  ));
+
   return (
     <div className="card product-card" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       <a href={productLink} className="product-link">
@@ -16,55 +24,63 @@ const ProductsCard = ({ name, description, productImage1, productImage2, product
           alt={`${name}`}
         />
         <div className="card-body">
-          <h3 className="card-title product-card__name">{name}</h3>
-          <p className="card-text product-card__about">{description}</p>
+          <p className="card-title product-card__name">{name}</p>
+          <p className="card-text product-card__about">{formattedDescription}</p>
         </div>
       </a>
     </div>
   );
 };
 
+
 const Products = () => {
   const products = [
     {
-      name: 'Red Clay Bricks',
-      description: 'High-quality red clay bricks for construction projects. Durable and eco-friendly.',
-      productLink: '/products/red-clay-bricks',
+      name: 'Rectangular Paver',
+      description: 'Size: 200 x 100 x 50 mm\nStrength: 7000 psi\nWater Absorption: 2%',
+      productLink: '/products/rectangular-paver',
       productImage1: `${process.env.PUBLIC_URL}/product1-a.jpg`,
       productImage2: `${process.env.PUBLIC_URL}/product1-b.jpg`,
     },
     {
-      name: 'Recycled Bricks',
-      description: 'Environmentally friendly recycled bricks made from reclaimed materials. ',
-      productLink: '/products/recycled-bricks',
+      name: 'Hexagonal Paver',
+      description: 'Side length Size: 8 in\nStrength: 7000 psi\nWater Absorption: 2%',
+      productLink: '/products/hexagonal-paver',
       productImage1: `${process.env.PUBLIC_URL}/product2-a.jpg`,
       productImage2: `${process.env.PUBLIC_URL}/product2-b.jpg`,
     },  
+    
+    
+
   ];
 
-  const [slidesToShow, setSlidesToShow] = useState(4);
+  const [slidesToShow, setSlidesToShow] = useState(3);
 
   useEffect(() => {
     const handleResize = () => {
       // Adjust the number of slidesToShow based on screen width
       if (window.innerWidth <= 768) {
-        setSlidesToShow(2);
+        setSlidesToShow(1); // for mobile screens
+      } else if (window.innerWidth <= 992) {
+        setSlidesToShow(2); // for tablet screens
       } else {
-        setSlidesToShow(4);
+        setSlidesToShow(3); // for larger screens
       }
     };
-
+  
     // Initial adjustment
     handleResize();
-
+  
     // Event listener for window resize
     window.addEventListener('resize', handleResize);
-
+  
     // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
+
 
   const settings = {
     dots: true,
@@ -99,3 +115,4 @@ const Products = () => {
 };
 
 export default Products;
+
