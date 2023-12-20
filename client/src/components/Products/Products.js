@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Products.css';
 
 const ProductsCard = ({ name, description, productImage1, productImage2, productLink }) => {
@@ -34,6 +36,9 @@ const ProductsCard = ({ name, description, productImage1, productImage2, product
 
 
 const Products = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const products = [
     {
       name: 'Rectangular Paver',
@@ -92,19 +97,35 @@ const Products = () => {
   };
 
   return (
-    <section className="container-fluid products-container">
+    <section
+      className="container-fluid products-container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       {products.length <= 4 ? (
-        <div className="row justify-content-center"> 
+        <div className="row justify-content-center">
           {products.map((product, index) => (
-            <div key={index} className="col-md-3 col-sm-6">
+            <div
+              key={index}
+              className="col-md-3 col-sm-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={`${index * 100}`}
+            >
               <ProductsCard {...product} />
             </div>
           ))}
         </div>
       ) : (
-        <Slider {...settings} style={{ maxWidth: '80%',margin: '0 auto' }}> 
+        <Slider {...settings} style={{ maxWidth: '80%', margin: '0 auto' }}>
           {products.map((product, index) => (
-            <div key={index} className="col-md-3 col-sm-6">
+            <div
+              key={index}
+              className="col-md-3 col-sm-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={`${index * 100}`}
+            >
               <ProductsCard {...product} />
             </div>
           ))}
