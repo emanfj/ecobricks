@@ -1,0 +1,75 @@
+
+.brick-colors-insight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.insight-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em; /* Use em for spacing */
+}
+
+.insight-item {
+  /* text-align: right; */
+  margin-right:0;
+  margin-left:0;
+  margin-bottom: 6.5em; /* Add space between insight items */
+}
+
+.insight-icon {
+  width: 4.5em; /* Adjust the size of the icon as needed */
+  height: 4.5em;
+}
+
+.insight-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.insight-description {
+  font-size: 1em;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 22em; /* Use em or another flexible unit */
+}
+
+.brick-colors-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.brick-colors-row img {
+  width: 6em; /* Use em or another flexible unit */
+  height: 7.5em; /* Use em or another flexible unit */
+  margin: 0;
+  transition: transform 0.3s;
+}
+
+.brick-colors-row .col {
+  padding: 0; /* Remove the default padding */
+}
+
+.brick-colors-row img:hover {
+  transform: scale(1.2); /* increase size on hover */
+}
+
+.brick-colors-insight {
+  margin-left: -15px; /* Adjust as needed */
+  margin-right: -15px; /* Adjust as needed */
+}
+
+.brick-colors-insight > .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-image-column {
+  padding: 0;
+}
