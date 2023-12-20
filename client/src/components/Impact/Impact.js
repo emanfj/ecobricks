@@ -1,66 +1,41 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRecycle, faSmog, faTint } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Impact.css';
+
+const PUBLIC_URL = process.env.PUBLIC_URL;
+
+const ImpactColumn = ({ value, heading, icon }) => (
+  <Col
+    lg={2}
+    md={4}
+    sm={12}
+    className="analytics-item mx-auto"
+    style={{ marginBottom: '1rem', textAlign: 'center' }}
+  >
+    <div className="analytic">
+      <span className="analytic-value">{value}</span><br/>
+      <span className="analytic-heading">{heading}</span>
+    </div>
+    <hr className="impact-divider" style={{ margin: '1.5rem auto 1.5rem' }} />
+    <div className="circle">
+      <div className="gradient-overlay"></div>
+      <img
+        src={`${PUBLIC_URL}/${icon}.png`}
+        alt={`${icon} Icon`}
+        className="circle-icon"
+        style={{ width: '10em', height: '10em',  }}
+      />
+    </div>
+  </Col>
+);
 
 const Impact = () => {
   return (
     <Container fluid className="impact-container">
-      <Row className="impact-heading" style={{ marginTop: '4rem' }}>
-        <Col xs="auto">
-          <div className="impact-dot"></div>
-        </Col>
-        <Col xs="auto">
-          <div className="impact">our impact</div>
-        </Col>
-        <Col xs="auto">
-          <div className="impact-dot"></div>
-        </Col>
-      </Row>
-      <Row className="impact-analytics text-center" style={{ margin: '4rem auto 4rem'}}>
-        <Col
-          lg={2}
-          md={4}
-          sm={12}
-          className="analytics-item mx-auto"
-          style={{ marginBottom: '1rem', textAlign: 'center' }}
-        >
-          <div className="numeric-analytic">2 kg/sq ft</div>
-          <hr className="impact-divider" style={{ margin: '1.5rem auto 1.5rem' }}/>
-          <div className="circle">
-            <div className="circle-heading">plastic waste reduction</div>
-            <FontAwesomeIcon icon={faRecycle} className="circle-icon" alt="Recycle Icon" />
-          </div>
-        </Col>
-        <Col
-          lg={2}
-          md={4}
-          sm={12}
-          className="analytics-item mx-auto"
-          style={{ marginBottom: '1rem', textAlign: 'center' }}
-        >
-          <div className="numeric-analytic">20%</div>
-          <hr className="impact-divider" style={{ margin: '1.5rem auto 1.5rem' }}/>
-          <div className="circle">
-            <div className="circle-heading">reduction in air pollution</div>
-            <FontAwesomeIcon icon={faSmog} className="circle-icon" alt="Air Pollution Icon" />
-          </div>
-        </Col>
-        <Col
-          lg={2}
-          md={4}
-          sm={12}
-          className="analytics-item mx-auto"
-          style={{ marginBottom: '1rem', textAlign: 'center' }}
-        >
-          <div className="numeric-analytic">98%</div>
-          <hr className="impact-divider" style={{ margin: '1.5rem auto 1.5rem' }}/>
-          <div className="circle">
-            <div className="circle-heading">conservation of water</div>
-            <FontAwesomeIcon icon={faTint} className="circle-icon" alt="Water Conservation Icon" />
-          </div>
-        </Col>
+      <Row className="impact-analytics text-center" style={{ margin: '4rem auto 4rem' }}>
+        <ImpactColumn value="2 kg/sq" heading="plastic waste reduction" icon="plastic-waste" />
+        <ImpactColumn value="20%" heading="reduction in air pollution" icon="air-pollution" />
+        <ImpactColumn value="98%" heading="conservation of water" icon="save-water" />
       </Row>
     </Container>
   );

@@ -27,9 +27,9 @@
   
   .circle {
   position: relative;
-  width: 200px;
-  height: 200px;
-  border: 6px solid #36CC6B;
+  width: 300px;
+  height: 300px;
+  border: 6px solid #00ff80;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -39,18 +39,18 @@
   cursor: pointer;
   overflow: hidden;
   flex-direction: column;
+    box-shadow: 0 0 0.5px #00ff00, 0 0 1px #00ff00, 0 0 1.5px #00ff00; 
 
   }
   
   .circle-icon {
-    font-size: 60px;
     color: #000; 
     transition: opacity 0.3s ease-in-out; 
-
   }
 
-  .circle-heading {
+  .heading {
     /* position: absolute; */
+    margin-top:2em;
     font-size: 17px;
     font-weight: 650;
     text-align: center;
@@ -62,41 +62,37 @@
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s ease-in-out; 
+    padding:1.5em;
   }
 
-  .circle-icon,
-.circle-heading {
+  .circle-icon
+{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-  
-  .circle:hover .circle-icon {
-    opacity: 0; /* hide the icon on hover */
-  }
 
-  .circle:hover .circle-heading {
-    opacity: 1;
-  }
+}
+
+
 
   .impact-divider {
   margin: 20px;
   width: 100%;
   margin-top:15px;
   margin-bottom:15px;
-  border: 1px solid #333;
-
+  border: 1px solid #00ff00;
+  /* box-shadow: 0 0 0.5px #00ff00, 0 0 1px #00ff00, 0 0 1.5px #00ff00;  */
+  margin: 1rem auto; /* Adjust the margin as needed */
   }
   
-  .impact-progress-bar {
-    height: 8px; /* Adjust the height to make the progress bar thinner */
-    border: none; /* Remove the default border */
-    background-color: #ddd; /* Set a background color for the progress bar */
+  .analytic-value {
+    font-size: 2em; 
+    color: #00ff80; 
+    text-shadow: 0 0 0.5px #00ff00, 0 0 1px #00ff00, 0 0 1.5px #00ff00; 
   }
-  
-  .numeric-analytic {
-  font-size: 24px;
-  font-weight: bold;
 
+.analytic-heading {
+  font-size: 1.5em;
+  /* font-weight: bold; */
   }
 
