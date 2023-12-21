@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './SDG.css';
 
 const SDG = () => {
-  // array of SDGs with their corresponding image paths and links
+  // Array of SDGs with their corresponding image paths and links
   const sdgGoals = [
     {
       number: 3,
@@ -42,11 +44,15 @@ const SDG = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <Container className="sdg-container">
-      <Row className="sdg-row justify-content-center align-items-center" style={{paddingLeft:'5em',paddingRight:'5em'}}>
+    <Container className="sdg-container" data-aos="fade-up">
+      <Row className="sdg-row justify-content-center align-items-center" style={{ paddingLeft: '5em', paddingRight: '5em' }}>
         {sdgGoals.map((goal) => (
-          <Col key={goal.number} xs={6} sm={4} md={3} lg = {3} className="sdg-col">
+          <Col key={goal.number} xs={6} sm={4} md={3} lg={3} className="sdg-col" data-aos="fade-up" data-aos-duration="1000">
             <div className="sdg-card">
               <a href={goal.link} target="_blank" rel="noopener noreferrer">
                 <img
@@ -63,7 +69,5 @@ const SDG = () => {
     </Container>
   );
 };
-
-
 
 export default SDG;

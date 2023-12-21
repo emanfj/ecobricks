@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SocialProof.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import Heading from '../Heading/Heading';
@@ -11,12 +13,14 @@ const TestimonialCard = ({ name, testimonial, blogLink }) => (
   <Card
     className="testimonial-card"
     style={{
-      // backgroundColor: '#ADCDB6',
+      backgroundColor: '#ADCDB6',
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
       borderRadius: '25px',
       height: '300px',
       border: 'none',
     }}
+    data-aos="fade-up"
+    data-aos-duration="1000"
   >
     <Card.Body style={{ display: 'flex', flexDirection: 'column' }}>
       <div>
@@ -40,44 +44,28 @@ const TestimonialCard = ({ name, testimonial, blogLink }) => (
   </Card>
 );
 
-const CollaborationLogo = ({ image, link }) => {
-  // const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <Col xs={6} md={4} lg={2} className="collaboration-logo-col">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          className= "collaboration-logos medium-size"
-          // className={`collaboration-logos medium-size ${isHovered ? 'colorized' : ''}`}
-
-          src={image}
-          alt="Collaboration Logo"
-          // onMouseEnter={() => setIsHovered(true)}
-          // onMouseLeave={() => setIsHovered(false)}
-        />
-      </a>
-    </Col>
-  );
-};
+const CollaborationLogo = ({ image, link }) => (
+  <Col xs={6} md={4} lg={2} className="collaboration-logo-col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <img
+        className="collaboration-logos medium-size"
+        src={image}
+        alt="Collaboration Logo"
+      />
+    </a>
+  </Col>
+);
 
 const SocialProof = () => {
   useEffect(() => {
-    const testimonials = document.querySelectorAll('.testimonial-card__testimonial');
-    const maxCharacters = 150;
-
-    testimonials.forEach((testimonial) => {
-      const text = testimonial.textContent;
-      if (text.length > maxCharacters) {
-        testimonial.style.setProperty('-webkit-line-clamp', '3');
-      }
-    });
+    AOS.init();
   }, []);
 
   const testimonialsData = [
     {
       name: 'ABC Company',
       testimonial:
-        'Client testimonial about the positive experience with our product.Client testimonial about the positive experience with our product.Client testimonial about the positive experience with our product.',
+        'Client testimonial about the positive experience with our product. Client testimonial about the positive experience with our product. Client testimonial about the positive experience with our product.',
       blogLink: '/blog/abc-company-story',
     },
     {
@@ -122,25 +110,23 @@ const SocialProof = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      // adjusting the number of slidesToShow based on screen width
+      // Adjusting the number of slidesToShow based on screen width
       if (window.innerWidth <= 768) {
         setSlidesToShow(1);
-      } 
-      else if (window.innerWidth <= 992){
+      } else if (window.innerWidth <= 992) {
         setSlidesToShow(2);
-      }
-      else {
+      } else {
         setSlidesToShow(3);
       }
     };
 
-    // initial adjustment
+    // Initial adjustment
     handleResize();
 
-    // event listener for window resize
+    // Event listener for window resize
     window.addEventListener('resize', handleResize);
 
-    // cleaning up the event listener on component unmount
+    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -152,15 +138,12 @@ const SocialProof = () => {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    
   };
-  
 
-  
   return (
     <Container fluid className="social-proof-container" style={{ textAlign: 'center' }}>
-      {/* testimonials Section */}
-      <Slider {...slickSettings} className="testimonial-cards " style={{ width: '70%',margin: '4rem auto 4rem'}}>
+      {/* Testimonials Section */}
+      <Slider {...slickSettings} className="testimonial-cards" style={{ width: '70%', margin: '4rem auto 4rem' }}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index}>
             <TestimonialCard {...testimonial} />
@@ -168,8 +151,8 @@ const SocialProof = () => {
         ))}
       </Slider>
 
-      {/* collaborations Section */}
-      <Heading title="COLLABORATIONS" detail="Lorem Gpsum Dolor Sit Amet" />
+      {/* Collaborations Section */}
+      <Heading title="COLLABORATIONS" detail="Joining Forces with Visionaries and Innovators Worldwide" />
 
       <Row className="collaborations justify-content-center">
         {partnerLogos.map((item, index) => (
