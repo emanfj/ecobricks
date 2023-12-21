@@ -8,7 +8,7 @@ const SDG = () => {
     {
       number: 3,
       image: `${process.env.PUBLIC_URL}/SDGs/sdg3.svg`,
-      link: 'https://sdgs.un.org/goals/goal6',
+      link: 'https://sdgs.un.org/goals/goal3',
     },
     {
       number: 6,
