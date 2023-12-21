@@ -15,20 +15,21 @@ const Header = () => {
   return (
     <header className="header">
       <Image src={`${publicUrl}/logo-transparent-white.png`} alt="Ecobricks LOGO" className="logo" />
-      <div className="menu-icon" onClick={toggleMenu}>
+      <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <Burger isOpen={isMenuOpen} direction="down" />
       </div>
       {isMenuOpen && (
         <div className="dropdown">
-          <ul className={`dropdown-content ${isMenuOpen ? 'open' : ''}`}>
-            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">About</a></li>
-            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Product</a></li>
-            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Blog</a></li>
-            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Contact</a></li>
-            <li style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Gallery</a></li>
+          <ul className="dropdown-content">
+            <li className="slide-in-right"style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">About</a></li>
+            <li className="slide-in-right"style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Product</a></li>
+            <li className="slide-in-right"style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Blog</a></li>
+            <li className="slide-in-right"style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Contact</a></li>
+            <li className="slide-in-right"style={{ fontSize:'1.1em',fontWeight:'650' }}><a href="#">Gallery</a></li>
           </ul>
         </div>
-      )}
+
+            )}
     </header>
   );
 };
