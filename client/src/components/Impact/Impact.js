@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Impact.css';
 
 const PUBLIC_URL = process.env.PUBLIC_URL;
@@ -11,6 +13,9 @@ const ImpactColumn = ({ value, heading, icon }) => (
     sm={12}
     className="analytics-item mx-auto"
     style={{ marginBottom: '1rem', textAlign: 'center' }}
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="100"
   >
     <div className="analytic">
       <span className="analytic-value">{value}</span><br/>
@@ -30,9 +35,13 @@ const ImpactColumn = ({ value, heading, icon }) => (
 );
 
 const Impact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Container fluid className="impact-container">
-      <Row className="impact-analytics text-center" style={{ margin: '4rem auto 4rem' }}>
+      <Row className="impact-analytics text-center" style={{ margin: '4rem auto 4rem' }} data-aos="fade-up" data-aos-duration="1000">
         <ImpactColumn value="2 kg/sq" heading="plastic waste reduction" icon="plastic-waste" />
         <ImpactColumn value="20%" heading="reduction in air pollution" icon="air-pollution" />
         <ImpactColumn value="98%" heading="conservation of water" icon="save-water" />

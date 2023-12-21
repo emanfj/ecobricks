@@ -73,3 +73,37 @@
 .main-image-column {
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .brick-colors-insight {
+    flex-direction: column;
+  }
+
+  .main-image-column {
+    padding-top: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .brick-colors-insight {
+    flex-direction: column;
+  }
+
+  .main-image-column {
+    order: -1;
+  }
+
+  .left-insight-col,
+  .right-insight-col {
+    order: -1;
+  }
+}
+
+/* sm */
+@media (max-width: 768px) {
+  .main-image {
+      width: 0;
+      height:0;
+  }
+}
+

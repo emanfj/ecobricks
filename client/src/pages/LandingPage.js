@@ -29,15 +29,15 @@ const LandingPage = () => {
       <Story /> 
       <Heading title="PRODUCTS" detail="Innovation in Every Brick" />
       <Products />
-      <Heading title="GREEN INTERLOCKING PAVING TILE" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="UNIQUENESS OF OUR TILES" detail="Discover the Unmatched Uniqueness of Our Tiles and Pavers" />
       <BrickColorsInsight />
       <Heading title="PROJECTS" detail="Lorem Gpsum Dolor Sit Amet" />
       <CompanyProjects />
-      <Heading title="IMPACT" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="IMPACT" detail="Explore the Transformative Impact of Our Sustainable Solutions" />
       <Impact />
-      <Heading title="SUSTAINABLE DEVELOPMENT GOALS" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="SUSTAINABLE DEVELOPMENT GOALS" detail="Contributing to Global Progress and Sustainable Practices" />
       <SDG />
-      <Heading title="SOCIAL PROOF" detail="Lorem Gpsum Dolor Sit Amet" />
+      <Heading title="SOCIAL PROOF" detail="Discover What Our Clients Say About Their Experiences" />
       <SocialProof />
       <Footer /> 
     </div>
